@@ -1,0 +1,262 @@
+@media (max-width: 1380px) {
+  .brand small {
+    display: none;
+  }
+
+  .site-nav {
+    gap: 0.85rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero__grid,
+  .contact-layout,
+  .footer-grid,
+  .gym__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-nav {
+    gap: 0.9rem;
+    padding-inline: 0.9rem;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .hero__visual,
+  .gym-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__visual {
+    min-height: 0;
+    max-width: 100%;
+  }
+
+  .services__grid,
+  .team__grid,
+  .socials__grid,
+  .brand-grid,
+  .about__grid,
+  .benefits__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline__connector {
+    width: 2px;
+    height: 40px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 960px) {
+  .section {
+    padding: 5rem 0;
+  }
+
+  .header-bar {
+    gap: 0.8rem;
+  }
+
+  .nav-toggle {
+    display: inline-grid;
+    place-items: center;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    left: 1rem;
+    right: 1rem;
+    display: grid;
+    gap: 0.85rem;
+    padding: 1rem;
+    border-radius: 24px;
+    background: rgba(5, 11, 20, 0.94);
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform 0.22s ease, opacity 0.22s ease, visibility 0.22s ease;
+  }
+
+  .site-nav.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 2.5rem;
+  }
+
+  .hero__grid {
+    gap: 2rem;
+  }
+
+  .hero__visual {
+    min-height: 0;
+  }
+
+  .hero-card--main {
+    width: 100%;
+  }
+
+  .testimonial-carousel {
+    width: min(100%, 760px);
+    min-height: 560px;
+    padding: 1rem;
+  }
+
+  .carousel-btn {
+    width: 48px;
+    height: 48px;
+    top: 50%;
+    margin-top: -24px;
+  }
+
+  .carousel-btn--prev {
+    left: .85rem;
+  }
+
+  .carousel-btn--next {
+    right: .85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: min(100vw - 1.25rem, 100%);
+  }
+
+  .hero__stats,
+  .brand-grid,
+  .about__grid,
+  .benefits__grid,
+  .services__grid,
+  .team__grid,
+  .socials__grid,
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.5rem, 13vw, 4rem);
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button,
+  .nav-cta {
+    width: 100%;
+  }
+
+  .hero__visual {
+    min-height: 0;
+  }
+
+  .hero-card--main img {
+    aspect-ratio: 5 / 4;
+  }
+
+  .testimonial-carousel {
+    aspect-ratio: auto;
+    min-height: 0;
+  }
+
+  .testimonial-card__body {
+    max-width: none;
+    min-height: auto;
+    padding: 3.6rem 1rem 1rem;
+  }
+
+  .testimonial-card p {
+    max-width: none;
+    font-size: 1rem;
+  }
+
+  .hero-card--badge {
+    max-width: 320px;
+  }
+
+  .masonry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .masonry-item,
+  .masonry-item--wide,
+  .masonry-item--tall {
+    grid-column: auto;
+    min-height: 220px;
+    grid-row: auto;
+  }
+
+  .testimonial-carousel__track {
+    width: 100%;
+  }
+
+  .footer-grid,
+  .footer-bottom {
+    grid-template-columns: 1fr;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .footer-bottom {
+    justify-items: start;
+  }
+
+  .whatsapp-float {
+    right: 0.8rem;
+    left: auto;
+    width: 58px;
+    height: 58px;
+    max-width: none;
+  }
+
+  .scroll-top {
+    right: 0.8rem;
+    bottom: 5.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-heading h2 {
+    font-size: 1.9rem;
+  }
+
+  .hero__lead,
+  .section-heading p:last-child {
+    font-size: 1rem;
+  }
+
+  .brand-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title-brand {
+    gap: .7rem;
+  }
+
+  .contact-layout__map iframe {
+    height: 280px;
+  }
+
+  .service-card__media,
+  .team-card img,
+  .social-card img,
+  .gym-feature img {
+    height: 220px;
+  }
+}

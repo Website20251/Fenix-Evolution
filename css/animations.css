@@ -1,0 +1,49 @@
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(.965); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes shine {
+  0% { transform: translateX(-120%); }
+  100% { transform: translateX(120%); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+.hero__copy, .hero__visual { animation: fadeUp .9s ease both; }
+.hero__visual { animation-delay: .14s; }
+.service-card, .info-card, .benefit-card, .timeline__step, .team-card, .social-card, .testimonial-carousel, .contact-form, .contact-layout__map, .gym-panel, .gym-feature { animation: zoomIn .8s ease both; }
+
+.button--primary, .nav-cta { position: relative; overflow: hidden; }
+.button--primary::after, .nav-cta::after {
+  content: ""; position:absolute; inset:0; background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.24) 45%, transparent 100%); transform: translateX(-120%);
+}
+.button--primary:hover::after, .nav-cta:hover::after { animation: shine .85s ease; }
+
+.service-card:hover, .team-card:hover, .social-card:hover, .info-card:hover, .benefit-card:hover, .timeline__step:hover, .contact-layout__map:hover, .contact-form:hover, .testimonial-carousel:hover, .gym-panel:hover, .gym-feature:hover {
+  transform: translateY(-4px);
+  transition: transform .24s ease, box-shadow .24s ease;
+}
+
+.hero-card--main img, .service-card__media img, .team-card img, .social-card img, .masonry-item img, .testimonial-card img, .gym-feature img {
+  transition: transform .55s ease, filter .55s ease;
+}
+.service-card:hover .service-card__media img, .team-card:hover img, .social-card:hover img, .masonry-item:hover img, .gym-feature:hover img {
+  transform: scale(1.06);
+  filter: saturate(1.08) contrast(1.03);
+}

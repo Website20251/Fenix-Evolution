@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Fisiotraining">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2f6bff"/>
+      <stop offset="100%" stop-color="#9aff2f"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="64" fill="#07111f"/>
+  <circle cx="128" cy="128" r="92" fill="url(#g)" opacity="0.18"/>
+  <path d="M76 72h104v22h-41v90h-25V94H76V72Z" fill="#fff"/>
+  <path d="M174 146c0-28-18-52-49-52-29 0-48 19-48 48 0 28 19 44 47 44 15 0 29-4 39-12l-11-17c-7 5-17 8-27 8-13 0-22-7-24-20h74c0-2-.1-4-.1-7Zm-74-7c2-13 10-21 23-21 14 0 21 8 23 21h-46Z" fill="#9aff2f"/>
+</svg>
