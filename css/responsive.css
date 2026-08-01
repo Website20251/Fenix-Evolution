@@ -111,8 +111,8 @@
   }
 
   .testimonial-carousel {
-    width: min(100%, 760px);
-    min-height: 560px;
+    width: min(100%, 580px);
+    min-height: 290px;
     padding: 1rem;
   }
 
@@ -178,7 +178,7 @@
   .testimonial-card__body {
     max-width: none;
     min-height: auto;
-    padding: 3.6rem 1rem 1rem;
+    padding: 3rem 1rem 1rem;
   }
 
   .testimonial-card p {
